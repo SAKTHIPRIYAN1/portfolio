@@ -11,7 +11,19 @@ let app=express();
 // routes...
 let MailRoute=mailrt.mailRoute;
 
-app.use(cors());
+const url=process.env.CLIENT_URL
+const whitelist = [url];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(express.json());
 
