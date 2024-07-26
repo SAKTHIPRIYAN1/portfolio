@@ -10,10 +10,9 @@ import ctf3 from './cert/courctf3.jpg'
 
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from "framer-motion";
-
 import { Toaster,toast } from "react-hot-toast";
 
-
+console.log(apiUrl)
 const MainEl=()=>{
     return(
         <>
