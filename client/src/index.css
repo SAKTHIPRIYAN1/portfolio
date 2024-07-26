@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        @apply bg-[rgb(16,23,41)] text-fntclr;
+    }
+}
+
+@layer components{
+    .menuicons{
+        @apply sm:scale-[0.5] md:scale-[0.5] absolute right-0 top-0  inline-block;
+    }
+    .transparent_blue{
+        background-color: rgba(38, 48, 72, 0.434);
+    }
+    .transparent_tone{
+        background-color: rgba(38, 48, 72, 0.434);
+        opacity: 0.8;
+    }
+    .paddingDiv{
+        @apply lg:px-[15%] md:px-[5%] w-full mb-10;
+    }
+    .LargeCon{
+        @apply w-full px-6 py-2
+    }
+    .ActualCon{
+        @apply backdrop-blur-lg  bg-[rgba(45,58,83,0.23)] py-8 flex px-6 rounded-[10px] md:space-x-4   flex-row items-start justify-between w-full
+    }
+    .gra{
+    background: rgba(103, 124, 159, 0.478);
+    box-shadow: 0 10px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px; 
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgba(38, 48, 72, 0.434), #2c3e50);
+      }
+      .circles {
+        display: flex;
+        z-index: -1;
+      }
+      .circle-1 {
+        height: 250px;
+        width: 250px;
+        top: 70px;
+        left: 0px;
+        opacity: 0.8;
+        animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+        animation-iteration-count: infinite;
+        animation-name: float;
+        -webkit-animation-name: float;
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        animation-direction: alternate;
+        
+      }
+      .circle-3{
+        height: 270px;
+        width: 270px;
+        top: 35%;
+        left: 40%;
+        opacity: 0.8;
+        animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+        animation-iteration-count: infinite;
+        animation-name: float;
+        -webkit-animation-name: float;
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        animation-direction: alternate;
+      }
+      
+      .circle-2 {
+        height: 180px;
+        width: 180px;
+        top: 0px;
+        left:37%;
+        opacity: 0.8;
+        animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+        animation-iteration-count: infinite;
+        animation-name: float;
+        -webkit-animation-name: float;
+        animation-duration: 5s;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        animation-direction: alternate;
+      }
+
+       @keyframes float {
+       
+         0% {
+           -webkit-transform: rotateX(0deg) translateY(0px);
+           -moz-transform: rotateX(0deg) translateY(0px);
+           -ms-transform: rotateX(0deg) translateY(0px);
+           -o-transform: rotateX(0deg) translateY(0px);
+           transform: rotateX(0deg) translateY(0px);
+           }
+       
+         50% {
+           -webkit-transform: rotateX(0deg) translateY(1px) translateX(5px);
+           -moz-transform: rotateX(0deg) translateY(10px) translateX(5px);
+           -ms-transform: rotateX(0deg) translateY(30px) translateX(5px);
+           -o-transform: rotateX(0deg) translateY(40px) translateX(5px);
+           transform: rotateX(0deg) translateY(10px) translateX(5px);
+       }
+         100% {
+           -webkit-transform: rotateX(0deg) translateY(0px) translateX(1px);
+           -moz-transform: rotateX(0deg) translateY(0px) translateX(1px);
+           -ms-transform: rotateX(0deg) translateY(0px) translateX(1px);
+           -o-transform: rotateX(0deg) translateY(0px) translateX(1px);
+           transform: rotateX(0deg) translateY(0px) translateX(1px);
+         }
+       
+       }
+}
