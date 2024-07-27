@@ -11,7 +11,6 @@ import ctf3 from './cert/courctf3.jpg'
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from "framer-motion";
 import { Toaster,toast } from "react-hot-toast";
-
 const MainEl=()=>{
     return(
         <>
@@ -50,8 +49,8 @@ const Home=()=>{
     }, [homevw]);
 
     return (
-    <div  id="home"  className=" h-[100vh] justify-center relative  flex items-center w-full sm:items-start sm:h-[50vh] ">
-       <div className="w-full px-[8%] flex flex-col relative sm:justify-center sm:flex-col-reverse sm:items-center  sm:pt-[20%]"> 
+    <div  id="home"  className=" h-[100vh] justify-center relative  flex items-center w-full sm:items-start sm:h-[63vh] ">
+       <div className="w-full px-[8%] flex flex-col relative sm:justify-center sm:flex-col-reverse sm:items-center sm:pt-[20%]"> 
             <motion.div
             
             variants={{
