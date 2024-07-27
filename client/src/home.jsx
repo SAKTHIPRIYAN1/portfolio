@@ -16,10 +16,10 @@ const MainEl=()=>{
         <>
         <Gradi1 />
             <Toaster  position="top-center"   toastOptions={{
-            className:' transparent_blue ',
             duration: 5000,
             style: {
             color: '#fff',
+            backgroundColor:'rgba(38, 48, 72, 0.434)',
             },
 }}
 />
