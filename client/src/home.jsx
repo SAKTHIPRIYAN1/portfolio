@@ -49,8 +49,8 @@ const Home=()=>{
     }, [homevw]);
 
     return (
-    <div  id="home"  className=" h-[100vh] justify-center relative  flex items-center w-full sm:items-start sm:h-[53vh] ">
-       <div className="w-full px-[8%] flex flex-col relative sm:justify-center sm:flex-col-reverse sm:items-center sm:pt-[23%]"> 
+    <div  id="home"  className=" h-[100vh] justify-center relative  flex items-center w-full  sm:h-[100vh] ">
+       <div className="w-full px-[8%] flex flex-col relative sm:justify-center sm:items-center "> 
             <motion.div
             
             variants={{
