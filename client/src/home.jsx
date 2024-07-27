@@ -600,7 +600,7 @@ const ContactForm = () => {
   const handleSubmit =async (e) => {
     e.preventDefault();
     try{
-        let resp=await axios.post('https://portfolio-server-da9zdsrgb-sakthipriyans-projects.vercel.app/sendmail',formData);
+        let resp=await axios.post('https://portfolio-server-fq0k2j468-sakthipriyans-projects.vercel.app/sendmail',formData);
         toast.success("Mail sent succssfully");
         setFormData({
             name: '',
