@@ -5,6 +5,9 @@ import 'dotenv/config';
 
 let mailRoute=express.Router();
 
+mailRoute.get("/",async (req,res)=>{
+     return res.status(200).json({ msg: 'success' });
+}
 
 mailRoute.post("/",async (req,res)=>{
     const {name,email,message}= req.body;
